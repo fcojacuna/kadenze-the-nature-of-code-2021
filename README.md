@@ -5,8 +5,9 @@ Kadenze coruse by Daniel Shiffman
 ### Sessions List
 
 - [ ] Introduction/Overview
-  - [ ] Introduction
-  - [ ] Random Walker
+  - [x] Introduction
+  - [x] What is P5.JS?
+  - [x] Random Walker
   - [ ] What is a Vector?
   - [ ] Vector Math
   - [ ] Building a Physics Engine
