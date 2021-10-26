@@ -3,7 +3,7 @@ let walkers = [];
 
 //Parameters
 const BACKGROUND_COLOR = 25;
-const NUMBER_OF_ELEMENTS = 5;
+const NUMBER_OF_WALKERS = 5;
 const DEFAULT_SIZE = 10;
 const DEFAULT_TRANSPARENCY_PERCENTAGE = 0;
 const DEFAULT_SPEED = DEFAULT_SIZE * 2;
@@ -42,7 +42,7 @@ function setup() {
   });
 
   //Create walkers
-  for (let i = 0; i < NUMBER_OF_ELEMENTS; i++) {
+  for (let i = 0; i < NUMBER_OF_WALKERS; i++) {
     walkers.push(new Walker());
   }
 
@@ -70,8 +70,9 @@ class Walker {
 
   //Walking method
   walk() {
-    this.x += random(-sliders.speed.value(), sliders.speed.value());
-    this.y += random(-sliders.speed.value(), sliders.speed.value());
+    const speed = sliders.speed.value();
+    this.x += random(-speed, speed);
+    this.y += random(-speed, speed);
 
     //Check bounds for x
     if (this.x > width || this.x < 0) {
@@ -86,12 +87,16 @@ class Walker {
 
   //Display Method
   display() {
+    const [transparency, size] = [
+      sliders.transparency.value(),
+      sliders.size.value(),
+    ];
     fill(
       map(this.x, 0, width, 0, 255),
       0,
       map(this.y, 0, height, 0, 255),
-      map(sliders.transparency.value(), 0, 100, 255, 0)
+      map(transparency, 0, 100, 255, 0)
     );
-    ellipse(this.x, this.y, sliders.size.value(), sliders.size.value());
+    ellipse(this.x, this.y, size, size);
   }
 }
