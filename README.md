@@ -8,8 +8,8 @@ Kadenze coruse by Daniel Shiffman
   - [x] Introduction
   - [x] What is P5.JS?
   - [x] Random Walker
-  - [ ] What is a Vector?
-  - [ ] Vector Math
+  - [x] What is a Vector?
+  - [x] Vector Math
   - [ ] Building a Physics Engine
   - [ ] Acceleration
   - [ ] Acelerating Towwrds the Mouse
