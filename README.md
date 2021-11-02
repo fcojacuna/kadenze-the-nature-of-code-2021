@@ -10,11 +10,11 @@ Kadenze coruse by Daniel Shiffman
   - [x] Random Walker
   - [x] What is a Vector?
   - [x] Vector Math
-  - [ ] Building a Physics Engine
-  - [ ] Acceleration
-  - [ ] Acelerating Towwrds the Mouse
-  - [ ] Perlin Noise
-  - [ ] ASSignment
+  - [x] Building a Physics Engine
+  - [x] Acceleration
+  - [x] Acelerating Towwrds the Mouse
+  - [x] Perlin Noise
+  - [x] ASSignment
 - [ ] Vectors/Forces
 - [ ] Steering Behaviors
 - [ ] Fractals

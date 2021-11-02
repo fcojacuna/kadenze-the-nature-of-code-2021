@@ -3,18 +3,23 @@ let walkers = [];
 
 //Parameters
 const BACKGROUND_COLOR = 25;
-const DEFAULT_NUMBER_OF_WALKERS = 10;
-const DEFAULT_SIZE = 10;
-const DEFAULT_TRANSPARENCY_PERCENTAGE = 10;
-const DEFAULT_ACCELERATION = 10;
-const MAX_VELOCITY = 100;
+const DEFAULT_NUMBER_OF_WALKERS = 15;
+const DEFAULT_SIZE = 20;
+const DEFAULT_TRANSPARENCY_PERCENTAGE = 0;
+const DEFAULT_ACCELERATION = 1;
+const DEFAULT_MAX_VELOCITY = 10;
+
+//Perlin noise
+let perlinTime = 0;
+let perlinTIncrement = 0.01;
 
 //Sliders
 const sliders = {
   transparency: createSlider(0, 100, DEFAULT_TRANSPARENCY_PERCENTAGE),
   size: createSlider(0, 50, DEFAULT_SIZE),
   quantity: createSlider(1, 50, DEFAULT_NUMBER_OF_WALKERS),
-  acceleration: createSlider(0, 1, DEFAULT_ACCELERATION, 0.1),
+  acceleration: createSlider(0, 10, DEFAULT_ACCELERATION, 1),
+  maxVelocity: createSlider(0, 100, DEFAULT_MAX_VELOCITY, 1),
 };
 
 //Reset button creator
@@ -66,6 +71,8 @@ function setup() {
 }
 
 function draw() {
+  perlinTime+=perlinTIncrement;
+  background(BACKGROUND_COLOR,BACKGROUND_COLOR,BACKGROUND_COLOR,100);
   nElementsHandler();
   walkers.forEach((w) => {
     w.update();
@@ -87,17 +94,19 @@ class Walker {
 
   //Walking method
   update() {
-    this.acceleration = p5.Vector.random2D();
 
-    this.acceleration.setMag(sliders.acceleration.value());
+    let mouse= createVector(mouseX,mouseY);
+
+    this.acceleration = p5.Vector.sub(mouse,this.pos);
+
+    this.acceleration.setMag(sliders.acceleration.value() * noise(perlinTime));
 
     this.velocity.add(this.acceleration);
     this.pos.add(this.velocity);
 
-    console.log(this.velocity.mag());
-
+    
     //Upper velocity limit
-    this.velocity.limit(MAX_VELOCITY);
+    this.velocity.limit(sliders.maxVelocity.value());
 
     //Check bounds for x
     if (this.pos.x > width || this.pos.x < 0) {
