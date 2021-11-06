@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.81c73d31.chunk.js",
-    "main.js.map": "/static/js/main.81c73d31.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f9eca425.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f9eca425.js.map",
-    "static/js/2.7a1589d8.chunk.js": "/static/js/2.7a1589d8.chunk.js",
-    "static/js/2.7a1589d8.chunk.js.map": "/static/js/2.7a1589d8.chunk.js.map",
-    "static/js/3.8a85f5dc.chunk.js": "/static/js/3.8a85f5dc.chunk.js",
-    "static/js/3.8a85f5dc.chunk.js.map": "/static/js/3.8a85f5dc.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.7a1589d8.chunk.js.LICENSE.txt": "/static/js/2.7a1589d8.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/kadenze-the-nature-of-code-2021/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/kadenze-the-nature-of-code-2021/static/js/main.81c73d31.chunk.js",
+    "main.js.map": "/kadenze-the-nature-of-code-2021/static/js/main.81c73d31.chunk.js.map",
+    "runtime-main.js": "/kadenze-the-nature-of-code-2021/static/js/runtime-main.33aad753.js",
+    "runtime-main.js.map": "/kadenze-the-nature-of-code-2021/static/js/runtime-main.33aad753.js.map",
+    "static/js/2.7a1589d8.chunk.js": "/kadenze-the-nature-of-code-2021/static/js/2.7a1589d8.chunk.js",
+    "static/js/2.7a1589d8.chunk.js.map": "/kadenze-the-nature-of-code-2021/static/js/2.7a1589d8.chunk.js.map",
+    "static/js/3.8a85f5dc.chunk.js": "/kadenze-the-nature-of-code-2021/static/js/3.8a85f5dc.chunk.js",
+    "static/js/3.8a85f5dc.chunk.js.map": "/kadenze-the-nature-of-code-2021/static/js/3.8a85f5dc.chunk.js.map",
+    "index.html": "/kadenze-the-nature-of-code-2021/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/kadenze-the-nature-of-code-2021/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.7a1589d8.chunk.js.LICENSE.txt": "/kadenze-the-nature-of-code-2021/static/js/2.7a1589d8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/kadenze-the-nature-of-code-2021/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f9eca425.js",
+    "static/js/runtime-main.33aad753.js",
     "static/js/2.7a1589d8.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.81c73d31.chunk.js"

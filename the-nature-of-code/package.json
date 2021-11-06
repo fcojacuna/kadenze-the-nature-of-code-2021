@@ -2,6 +2,7 @@
   "name": "the-nature-of-code",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/kadenze-the-nature-of-code-2021",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
