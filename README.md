@@ -1,10 +1,10 @@
 # kadenze-the-nature-of-code-2021
-Kadenze coruse by Daniel Shiffman
+Kadenze course by Daniel Shiffman
 
 
 ### Sessions List
 
-- [ ] Introduction/Overview
+- [x] Introduction/Overview
   - [x] Introduction
   - [x] What is P5.JS?
   - [x] Random Walker
